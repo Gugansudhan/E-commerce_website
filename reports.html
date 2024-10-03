@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reports</title>
+    <script src="js/reports.js" defer></script>
+</head>
+<body>
+    <h1>Customer Order Reports</h1>
+
+    <!-- All Customer Orders -->
+    <section>
+        <h2>All Customer Order History</h2>
+        <button id="download-all-orders">Download CSV</button>
+        <table id="all-orders-table">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer ID</th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- Top 10 Customer Orders -->
+    <section>
+        <h2>Top 10 Customer Order History (From Date - To Date)</h2>
+        <input type="date" id="start-date-top10">
+        <input type="date" id="end-date-top10">
+        <button id="download-top10-orders">Download CSV</button>
+        <table id="top10-orders-table">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer ID</th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- Cash Purchase Reports -->
+    <section>
+        <h2>Cash Purchase Reports (From Date - To Date)</h2>
+        <input type="date" id="start-date-cash">
+        <input type="date" id="end-date-cash">
+        <button id="download-cash-purchases">Download CSV</button>
+        <table id="cash-purchases-table">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer ID</th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <!-- Credit Purchase Reports -->
+    <section>
+        <h2>Credit Purchase Reports (From Date - To Date)</h2>
+        <input type="date" id="start-date-credit">
+        <input type="date" id="end-date-credit">
+        <button id="download-credit-purchases">Download CSV</button>
+        <table id="credit-purchases-table">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer ID</th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+</body>
+</html>

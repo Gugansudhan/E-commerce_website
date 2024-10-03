@@ -1,0 +1,46 @@
+/* CRUD Container Styling */
+#crudContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* CRUD Buttons Styling */
+.crud-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.crud-buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.crud-buttons button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Section Content Styling */
+#crudContent {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    min-height: 300px;
+}
+
+/* Hide content by default */
+section {
+    display: none;
+}

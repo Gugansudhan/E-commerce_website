@@ -1,0 +1,123 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url(images/html_table.jpg) center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header styles */
+header {
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+/* Main cart styles */
+main {
+    margin: 30px;
+    width: 80vw;
+    height: 90vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#cart-items {
+    flex: 1;
+    overflow-y: auto;
+}
+
+#cart-summary {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.increase, .decrease{
+    padding: 5px;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #d5d1defe;
+    padding: 1rem;
+    text-align: left;
+    cursor: pointer;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 246, 246, 0.9);
+}
+
+td {
+    padding: 1rem;
+}
+
+/* Summary styles */
+#total-price {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#clear-cart-button {
+    background-color: #dc3545;
+}
+
+#clear-cart-button:hover {
+    background-color: #c82333;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #232f3e;
+    color: white;
+    margin-top: auto; /* Push footer to the bottom */
+    width: 100%;
+}
